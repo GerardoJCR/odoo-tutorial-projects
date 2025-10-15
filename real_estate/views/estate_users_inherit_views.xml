@@ -10,11 +10,11 @@
             <xpath expr="//notebook" position="inside">
                 <page string="Propiedades xd">
                     <field name="property_ids">
-                        <tree>
+                        <list>
                             <field name="name" />
                             <field name="expected_price" />
                             <field name="state" />
-                        </tree>
+                        </list>
                     </field>
                 </page>
             </xpath>
