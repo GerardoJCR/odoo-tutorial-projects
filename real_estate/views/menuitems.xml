@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Menú raíz -->
+    <menuitem id="estate_menu_root" name="Estate" sequence="10" />
+
+    <menuitem id="estate_menu_advertisements"
+        name="Advertisements"
+        parent="estate_menu_root"
+        sequence="10"
+    />
+    <!-- Submenú con acción -->
+    <menuitem id="estate_menu_property"
+        name="Properties"
+        parent="estate_menu_advertisements"
+        action="estate_property_action"
+        sequence="10" />
+
+    <menuitem id="estate_menu_offer"
+        name="Offers"
+        parent="estate_menu_advertisements"
+        action="action_estate_property_offer"
+        sequence="10"
+    />
+
+    <!-- Submenú -->
+    <menuitem
+        id="estate_menu_settings"
+        name="Settings"
+        parent="estate_menu_root"
+        sequence="100"
+    />
+
+    <!-- Sub-Submenú con acción -->
+    <menuitem
+        id="estate_menu_property_type"
+        name="Property Types"
+        parent="estate_menu_settings"
+        action="action_estate_property_type"
+        sequence="10"
+    />
+
+    <!-- Sub-Submenú con acción -->
+    <menuitem
+        id="estate_menu_property_tag"
+        name="Property Tags"
+        parent="estate_menu_settings"
+        action="action_estate_property_tag"
+        sequence="20"
+    />
+    <!-- submenu de users -->
+    <!-- <menuitem
+        id="estate_menu_property_user"
+        name="Users"
+        parent="estate_menu_settings"
+        action="action_estate_property_user"
+        sequence="30"
+    /> -->
+
+
+</odoo>
